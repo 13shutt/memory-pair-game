@@ -1,0 +1,77 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #333AAA; 
+}
+
+.cards .cards-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+img {
+  background: blue;
+  height: 90px;
+  width: 90px;
+  border: 2px solid #333AAA;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 3px;
+}
+
+.img-div {
+  background: blue;
+  height: 90px;
+  width: 90px;
+  border: 2px solid #333AAA;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 3px;
+}
+
+
+
+
+.flip-container {
+	perspective: 500px;
+}
+
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 90px;
+	height: 90px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
