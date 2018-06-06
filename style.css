@@ -38,11 +38,17 @@ img {
   margin: 3px;
 }
 
+.inviz {
+  opacity:0;
+  transition:opacity 1s linear;
+}
+
 
 
 
 .flip-container {
-	perspective: 500px;
+  perspective: 500px;
+  margin: 30px;
 }
 
 .flip-container.hover .flipper {
