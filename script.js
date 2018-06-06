@@ -30,6 +30,7 @@ document.addEventListener("click", () => {
   var imgList = document.querySelectorAll('.hover')
   var targArr = imgList
 
+
   if (targArr[0].childNodes[1].childNodes[3].childNodes[1].src == targArr[1].childNodes[1].childNodes[3].childNodes[1].src) {
     targArr = []
     setTimeout(()=>{
@@ -37,6 +38,8 @@ document.addEventListener("click", () => {
       imgList[0].classList.remove('hover')
       imgList[0].classList.add('inviz')
       imgList[1].classList.add('inviz')
+      imgList[0].onclick = console.log('haha')
+      imgList[1].onclick = console.log('haha')
     }, 1000)
   } if (targArr[0].childNodes[1].childNodes[3].childNodes[1].src != targArr[1].childNodes[1].childNodes[3].childNodes[1].src) {
     targArr = []
@@ -46,7 +49,7 @@ document.addEventListener("click", () => {
     }, 1500)
   }
 
-  
+
 })
 
 
