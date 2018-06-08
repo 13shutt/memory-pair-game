@@ -26,6 +26,16 @@ document.addEventListener("DOMContentLoaded", renderImages = () => {
   }
 });
 
+document.addEventListener('mousedown', () => {
+  var imgList = document.querySelectorAll('.hover')
+
+  if (imgList.length == 2) {
+    document.querySelector('.cards-row').classList.add('no-pointer')
+  } else {
+    document.querySelector('.cards-row').classList.remove('no-pointer')
+  }
+})
+
 document.addEventListener("click", () => {
   var imgList = document.querySelectorAll('.hover')
   var targArr = imgList
